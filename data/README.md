@@ -1,2 +1,2 @@
 # Data
-Data can be downloaded from [download](https://cloud.informatik.uni-halle.de/s/55cFgjxSDByiaK9)
+Data can be downloaded from [download](https://files.webis.de/corpora/corpora-webis/corpus-webis-compquestions-22.zip)
