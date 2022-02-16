@@ -78,12 +78,11 @@ models = [["electra", "google/electra-large-discriminator"], ["roberta", "robert
 #models = [["electra", "google/electra-base-discriminator"], ["roberta", "roberta-base"], ["xlnet", "xlnet-base-cased"] , ["bert","bert-base-uncased"], ["albert","albert-base-v2"]]
 
 # configuration for the model training (for the particular model configuration refer to the paper)
-
-args = {"overwrite_output_dir": True, "num_train_epochs": 10, "fp16": False, "train_batch_size": 8, "gradient_accumulation_steps": 4, "evaluate_during_training": True, "max_seq_length": 64, "learning_rate": 2e-5, "output_dir": "outputs_very_hard/", "early_stopping_consider_epochs": True}
+args = {"overwrite_output_dir": True, "num_train_epochs": 10, "fp16": False, "train_batch_size": 8, "gradient_accumulation_steps": 4, "evaluate_during_training": True, "max_seq_length": 64, "learning_rate": 2e-5, "output_dir": "OUTPUT_PATH", "early_stopping_consider_epochs": True}
 #use_weights = True
 
 if __name__ == "__main__":
    for model in models:
        for lr in [2e-5]: #, 4e-5, 6e-5]: #1e-5, 3e-5, 5e-5]:
            args["learning_rate"] = lr
-           main(parser.parse_args(), model, False, "finetune-very-hard/{}{}".format(model[1], '_10epochs'))
+           main(parser.parse_args(), model, False, "directory-name-to-store-results/{}{}".format(model[1], '_10epochs'))
