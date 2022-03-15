@@ -1,4 +1,4 @@
-# Towards Understanding and Answering Comparative Questions
+## Towards Understanding and Answering Comparative Questions
 
 * [Code](code)
 * [Data](data)
