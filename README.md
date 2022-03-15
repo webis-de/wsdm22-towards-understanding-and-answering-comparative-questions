@@ -1,6 +1,9 @@
-# wsdm22-towards-understanding-and-answering-comparative-questions
+# Towards Understanding and Answering Comparative Questions
 
-### Cite
+* [Code](code)
+* [Data](data)
+
+### Citation
 
 ```
 @InProceedings{bondarenko:2022a,
