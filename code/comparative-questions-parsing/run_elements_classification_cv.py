@@ -81,7 +81,16 @@ models =  [["roberta", "roberta-large"]]
 # configuration for the model training (for the particular model configuration refer to the paper)
 # important to specify the "labels_list", e.g., if a dataset contains only two labels "O" and "OBJ": "labels_list": ["O", "OBJ"]
 
-args = {"overwrite_output_dir": True, "num_train_epochs": 10, "fp16": False, "train_batch_size": 8, "gradient_accumulation_steps": 4, "evaluate_during_training": False, "learning_rate": 3e-5, "labels_list": ["O", "OBJ", "ASP", "PRED"], "reprocess_input_data": True, "output_dir": "OUTPUT_PATH", "max_seq_length": 64, "use_early_stopping": True}
+args = {"overwrite_output_dir": True, "num_train_epochs": 10, 
+        "fp16": False, "train_batch_size": 8, 
+        "gradient_accumulation_steps": 4, 
+        "evaluate_during_training": False, 
+        "learning_rate": 3e-5, 
+        "labels_list": ["O", "OBJ", "ASP", "PRED"], 
+        "reprocess_input_data": True, 
+        "output_dir": "OUTPUT_PATH", 
+        "max_seq_length": 64, 
+        "use_early_stopping": True}
 
 if __name__ == "__main__":
    for model in models:
