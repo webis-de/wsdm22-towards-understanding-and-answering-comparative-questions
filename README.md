@@ -1,6 +1,6 @@
 # wsdm22-towards-understanding-and-answering-comparative-questions
 
-# Cite
+### Cite
 
 ```
 @InProceedings{bondarenko:2022a,
